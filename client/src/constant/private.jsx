@@ -1,4 +1,4 @@
-export const AUTH_URL = "http://localhost:8000/api/auth"
-export const GET_USER = "http://localhost:8000/api/user"
-export const BASE_URL = "http://localhost:8000/api"
-export const Back_end = "http://localhost:8000"
+export const AUTH_URL = "https://realtimechatapp-backend-ue46.onrender.com/api/auth"
+export const GET_USER = "https://realtimechatapp-backend-ue46.onrender.com/api/user"
+export const BASE_URL = "https://realtimechatapp-backend-ue46.onrender.com/api"
+export const Back_end = "https://realtimechatapp-backend-ue46.onrender.com"
