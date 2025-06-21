@@ -29,7 +29,7 @@ const signUp = async (req, res) => {
         });
 
         const token = await getToken(user._id);
-        res.cookie("token", token, { httpOnly: true });
+        res.cookie("token", token, { httpOnly: true, sameSite: "None", secure: true });
 
         return res.status(201).json(user);
     } catch (err) {
@@ -52,7 +52,7 @@ const logIn = async (req, res) => {
         }
 
         const token = await getToken(user._id);
-        res.cookie("token", token, { httpOnly: true });
+        res.cookie("token", token, { httpOnly: true, sameSite: "None", secure: true });
 
         return res.status(200).json(user);
     } catch (err) {
