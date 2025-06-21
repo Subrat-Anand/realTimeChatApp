@@ -14,8 +14,8 @@ const Login = () => {
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState("");
 
-    const [email, setEmail] = useState("rishu975@gmail.com");
-    const [password, setPassword] = useState("anand123");
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
 
     const handleLogin = async (e)=>{
         e.preventDefault();
